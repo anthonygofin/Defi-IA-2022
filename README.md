@@ -9,3 +9,9 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
   
   - Be sure to have the `kaggle` command installed using `pip install kaggle`
   - Run `dowload_data.sh` in your working directory. 
+  
+## Preprocessing the data:
+  
+  - Install the `xarray` python library (plus `netcdf4` and  `h5netcdf` if necessary) to collect Arpege_2D data
+  
+  
