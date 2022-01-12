@@ -13,6 +13,6 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
 ## Preprocessing the data:
   
   - Install the `xarray` python library (plus `netcdf4` and  `h5netcdf` if necessary) to collect Arpege_2D data
-  - Run truc truc
+  - Run preprocess_train.py (passing your working directory in argument) to remove nans from X_station_train and Y_train, to merge X_station with 2D_Arpgège and then reshape the training features to hourly features. Two files full_X_train and full_Y_train are created in the directory ./DATA_RAINFALL/Train/Train/. 
   
   
