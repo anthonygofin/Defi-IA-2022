@@ -15,7 +15,7 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
 ## Preprocessing the data:
   
   - Install the `xarray` python library (plus `netcdf4` and  `h5netcdf` if necessary) to collect Arpege_2D data
-  - Open your terminal in your working directory and run the following command : `python preprocess_train.py <your_working_directory_path>`. The script fills nans from X_station_train and Y_train, merges X_station_train with 2D_arpege_train and then reshapes the training features to hourly features (all features at each hour). Two files full_X_train.csv and full_Y_train.csv are created in the directory ./DATA_RAINFALL/Train/Train/. Preprocessing the training set is time-consuming (approximately 6 hours). 
+  - Open your terminal in your working directory and run the following command : `python preprocess_train.py <your_working_directory_path>`. The script fills nans in X_station_train and Y_train, merges X_station_train with 2D_arpege_train and then reshapes the training features to hourly features (all features at each hour). Two files full_X_train.csv and full_Y_train.csv are created in the directory ./DATA_RAINFALL/Train/Train/. Preprocessing the training set is time-consuming (approximately 6 hours). 
    - Open your terminal in your working directory and run the following command : `python preprocess_test.py <your_working_directory_path>`.  The script fills nans in X_station_test, merges X_station_test with 2D_arpege_test and then reshapes the features to hourly features. A file full_X_test.csv is created in the directory ./DATA_RAINFALL/Test/Test/. Preprocessing the test set could last for around 30 minutes. Note that Y_test is not provided by MeteoFrance. 
   
 ## Training models and making predictions
